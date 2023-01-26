@@ -1,0 +1,12 @@
+apiVersion: infra.contrib.fluxcd.io/v1alpha1
+kind: Terraform
+metadata:
+  name: s3
+  namespace: tf-controller
+spec:
+  path: ./terraform/s3
+  interval: 1m
+  approvePlan: auto
+  sourceRef:
+    kind: GitRepository
+    name: flux-system
