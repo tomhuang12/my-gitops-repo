@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
 - ./flux-system
 - infra.yaml
-- ./terraform/s3
+- terraform.yaml
